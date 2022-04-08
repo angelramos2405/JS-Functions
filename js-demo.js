@@ -8,19 +8,19 @@
       is the number of the week from 0 (Sunday) to 6 (Saturday)
 */
 runClock();
-setInterval("runClock"()",1000);
+setInterval(() => runClock(), 1000);
 
-Function runClock(){
-var thisDay=new Date();
-var this Date=thisDay.toLocaleDateString();
+function runClock(){
+var thisDay=newDate();
+var thisDate=thisDay.toLocaleDateString();
 var thisDayNum = thisDay.getDay();
 var thisWeekDay = getWeekday(thisDayNum);
 var thisTime = thisDay.toLocaleTimeString();
 }
 
-document.getElementbyId("date").textContent= thisDate;
+{document.getElementbyId("date").textContent= thisDate;
 document.getElemetbyId("wday").textContent= thisWeekday;
 document.getElementbyId("time").textContent=thisTime;
-}
+
 function getWeekday(dayNum){
-var wDays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var wDays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];}}
